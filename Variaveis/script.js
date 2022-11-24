@@ -34,3 +34,36 @@ var idade = 21
 var food;
 console.log(food)
 food = "Lorem"
+
+var ano = '2022'
+var mes = 9;
+console.log(ano + mes);
+
+var melhor = 'teste'
+var frase1 = "Esse é o \"Melhor\" jogo";
+
+var gols = 1000;
+var frase2 = 'Lorem fez' + gols + 'gols';
+
+console.log(frase2);
+
+// Declare uma variável contendo uma string
+var nome = "Lorem"
+
+// Declare uma variável contendo um número dentro de uma string
+var numero = "21"
+// Declare uma variável com a sua idade
+var idade = 30
+
+// Declare duas variáveis, uma com seu nome
+
+var nome = "Caio"
+// e outra com seu sobrenome e some as mesmas
+var sobrenome = "Mouta"
+
+var nomeCompleto = `${nome} + ${sobrenome}`;
+connsle.log(nomeCompleto)
+// Coloque a seguinte frase em uma variável: It's time
+var frase = "It's time"
+// Verifique o tipo da variável que contém o seu nome
+console.log(typeof nome)
