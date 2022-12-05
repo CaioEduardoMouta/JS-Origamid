@@ -20,3 +20,23 @@ console.log(incremento++)
 
 var decremento = 2;
 console.log(--decremento)
+
+var total = 10 + 5 * 2 / 2 + 20
+
+// Expressão que retornem NaN
+var expressao1 = 'Teste' / 2;
+var expressao2 = 'Teste' -2;
+console.log(expressao1, expressao2)
+
+var soma = + '200' + 50;
+console.log(soma);
+
+var x = 5;
+console.log(++x);
+
+// Como dividir o peso por 2 
+var numero = + '80'/2;
+var unidade = 'kg';
+var peso = numero + unidade;
+
+console.log(peso);
