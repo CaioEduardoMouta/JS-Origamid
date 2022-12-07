@@ -22,3 +22,20 @@ if(nome) {
 if(!possuiGraduacao) {
     console.log('Não possui graduação');
 }
+
+var x = 'Gato';
+
+console.log(x !== 'Gato')
+
+if((5 - 5) && (5 + 5)) {
+    console.log('Verdadeiro');
+} else {
+    console.log('Falso');
+}
+
+var condicional = (5 - 10) && (5 + 5)
+if(condicional) {
+    console.log('Verdadeiro', condicional);
+} else {
+    console.log('Falso');
+}
