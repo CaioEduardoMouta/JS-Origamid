@@ -39,3 +39,6 @@ if(condicional) {
 } else {
     console.log('Falso');
 }
+
+var condicional2 = (5 - 5) || (5 + 5) || (10 - 2);
+console.log(condicional2);
