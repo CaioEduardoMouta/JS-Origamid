@@ -1,56 +1,40 @@
-// Crie uma função para verificar se um valor é Truthy
-function trueOrFalse(valor) {
-    return !!valor;
+// Crie um objeto com os seus dados pessoais
+var pessoa = {
+    nome: 'Caio Eduardo',
+    sobrenome: 'Mouta',
+    idade: 29,
+    profissao: 'Assistente'
+  }
+  
+// Deve possui pelo menos duas propriedades nome e sobrenome
+pessoa.NomeCompleto = function() {
+    return `${this.nome} ${this.sobrenome}`;
 }
+// Crie um método no objeto anterior, que mostre o seu nome completo
 
-// Crie uma função matemática que retorne o perímetro de um quadrado
-// lembrando: perímetro é a soma dos quatro lados do quadrado
-function quadrado(lado1,lado2,lado3,lado4){
-    return lado1 + lado2 + lado3 + lado4;
-}
+// Modifique o valor da propriedade preco para 3000
+var carro = {
+    preco: 1000,
+    portas: 4,
+    marca: 'Audi',
+  }
+  
+  carro.preco = 3000;
+  // Crie um objeto de um cachorro que represente um labrador,
+  var pessoa = {
+    raca: 'Labrador',
+    idade: 10,
+    cor: 'preto',
+    latir(pesso) {
+        if(pessoa ==='homem') {
+            console.log('Cachorro late');
+        } else {
+            console.log('Cachorro não late')
+        }
 
-// Crie uma função que retorne o seu nome completo
-// ela deve possuir os parâmetros: nome e sobrenome
-
-function nomeCompleto(nome, sobrenome) {
-    console.log('Caio Eduardo', ' Mouta');
-}
-
-// Crie uma função que verifica se um número é par
-function ePar(numero){
-    var modulo = numero % 2;
-    if(modulo !== 0) {
-        return true;
-    } else {
-        return false;
     }
-    
-}
-
-// Crie uma função que retorne o tipo de
-// dado do argumento passado nela (typeof)
-function tipoDeDado(dado) {
-    return typeof dado;
-}
-
-// addEventListener é uma função nativa do JavaScript
-// o primeiro parâmetro é o evento que ocorre e o segundo o Callback
-// utilize essa função para mostrar no console o seu nome completo
-// quando o evento 'scroll' ocorrer.
-
-//addEventListener('click');
-
-// Corrija o erro abaixo
-var totalPaises = 193;
-
-function precisoVisitar(paisesVisitados) {
-   
-    return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
   }
-
-  function jaVisitei(paisesVisitados) {
-    return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
-  }
-  precisoVisitar(20);
+  
+  // preto com 10 anos, que late ao ver um homem
   
   
