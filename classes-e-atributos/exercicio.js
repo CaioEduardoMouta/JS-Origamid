@@ -1,28 +1,24 @@
-// Mostre no console cada parágrado do site
-const paragrafos = document.querySelectorAll('p');
-console.log(paragrafos);
+// Adicione a classe ativo a todos os itens do menu
+const itemMenu = document.querySelectorAll('.menu a');
 
-paragrafos.forEach((item) => {
-    console.log(item);
-});
+itemMenu.forEach((item) => {
+  item.classList.add('ativo');
+})
 
-// Mostre o texto dos parágrafos no console
-paragrafos.forEach((item) => {
-    console.log(item.innerText);
-});
+// Remove a classe ativo de todos os itens do menu e mantenha apenas no primeiro
 
-// Como corrigir os erros abaixo:
+itemMenu.forEach((item) => {
+  item.classList.remove('ativo');
+})
+
+itemMenu[0].classList.add('ativo');
+
+// Verifique se as imagens possuem o atributo alt
 const imgs = document.querySelectorAll('img');
 
-imgs.forEach((item, index) => {
-  console.log(item, index);
-});
-
-let i = 0;
 imgs.forEach(() => {
-  console.log(i++);
-});
+  const possuiAtributo = img.hasAttribute('alt');
+  console.log(img.possuiAtributo);
+})
+// Modifique o href do link externo no menu
 
-imgs.forEach(() => i++);
-
-console.log(i);
