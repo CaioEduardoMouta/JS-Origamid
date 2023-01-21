@@ -1,21 +1,50 @@
-const listaAnimais = document.querySelector('.animais-lista');
+// Verifique a distância da primeira imagem
+// em relação ao topo da página
 
-const height = listaAnimais.scrollHeight;
-const animaisTop = listaAnimais.offsetTop;
+const img = document.querySelector('img');
+const imgTop = img.offsetTop;
 
-console.log(animaisTop);
+console.log(imgTop);
 
-const raposah2 = document.querySelector('h2');
+// Retorne a soma da largura de todas as imagens
 
-const h2left = raposah2.offsetLeft;
 
-const rect = raposah2.getBoundingClientRect();
+function somaImagens() {
+const imagens = document.querySelectorAll('img');
+let soma = 0;
+imagens.forEach((imagem) => {
+  soma += imagem.offsetWidth
+});
+  console.log(soma);
+}
 
-console.log(rect, top);
+window.onload = function() {
+  somaImagens();
+}
 
-console.log(
-  window.innerWidth,
-  window.innerHeight,
-  window.outerWidth,
-  window.outerHeight,
-);
+// Verifique se os links da página possuem
+// o mínimo recomendado para telas utilizadas
+// com o dedo. (48px/48px de acordo com o google)
+
+const links = document.querySelector('a');
+
+links.forEach((link) => {
+  const linkWidth = link.offsetWidth;
+  const linkHeight = link.offsetHeigth;
+  if(linkWidth >= 48 && linkHeight >= 48) {
+    console.log(link, 'Possui boa acessibilidade')
+  } else {
+    console.log(link, 'Não possui boa acessibilidade')
+  }
+});
+
+// Se o browser for menor que 720px,
+// adicione a classe menu-mobile ao menu
+
+const browserSmall = window.matchMedia('(max-width: 720px)').matches;
+
+
+if(browserSmall) {
+  const menu = document.querySelector('.menu');
+  menu.classList.add('menu-mobile');
+}

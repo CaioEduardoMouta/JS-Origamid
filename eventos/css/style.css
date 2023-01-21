@@ -3,6 +3,14 @@ body, h1, h2, ul, li, p, dd,dt, dl {
     padding: 0px;
 }
 
+html.textomaior {
+    font-size: 150%;
+}
+
+.alorem {
+    background: rgb(118, 89, 86);
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -61,7 +69,7 @@ body {
     font-display: 'Playfair Display SC', georgia;
     font-size: 6rem;
     line-height: 1;
-    font-weight: 400;
+    font-weight: 400px;
     margin-bottom: 3rem;
     grid-column: 1;
 }
