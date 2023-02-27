@@ -38,3 +38,26 @@ listaItens = listaItens.replace('Camisas', 'Shirts');
 listaItens - listaItens.replace(/[]+/g, ',')
 
 const arrayLista = listaItens.split('s')
+
+console.log(arrayLista)
+
+const htmlText = '<div>O melhor item</div> <div>Lorem Ipsum</div>'
+const htmlArray = htmlText.split('div');
+const novoHtml = htmlArray.join('section');
+
+console.log(htmlText)
+console.log(htmlArray)
+
+const frutasArray = ['Banana','Melancia','Laranja'];
+
+const sexo1 = 'Feminino';
+const sexo2 = 'feminino';
+const sexo3 = 'FEMININO';
+
+console.log(sexo1.toUpperCase === 'FEMININO');
+
+const teste = '    CaiO  ';
+
+console.log(teste.trim());
+console.log(teste.trimEnd());
+console.log(teste.trimStart());
