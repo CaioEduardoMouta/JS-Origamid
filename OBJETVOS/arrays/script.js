@@ -55,7 +55,7 @@ console.log(carros.pop());
 
 console.log(carros.shift());
 
-console.log(carros.splica(2,0,'Fusca'))
+console.log(carros.splice(2,0,'Fusca'))
 
 console.log(carros);
 
@@ -74,4 +74,8 @@ htmlString = htmlString.join('h1')
 
 console.log(htmlString);
 
-console.log(linguagens.slice(2,4))
+const cloneLinguagens = linguagens.slice();
+
+console.log(linguagens.pop());
+
+console.log(cloneLinguagens)
