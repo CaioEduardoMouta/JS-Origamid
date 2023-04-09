@@ -69,4 +69,27 @@ const filtro = Array.prototype.filter.call(li, (item) => {
     console.log(item);
 })
 
+console.log(filtro());
+
 console.log(li)
+
+const numeros = [332312,3132,321,31,213,9];
+
+const $ = document.querySelectorAll.bind(document);
+
+const carro = {
+    marca: 'Ford',
+    ano: 2018,
+    acelerar: function(aceleracao, tempo) {
+      return `${this.marca} acelerou ${aceleracao} em ${tempo}`;
+    }
+  }
+
+  const gm = {
+    marca: 'ONIX'
+  }
+
+  const acelerarGM = carro.acelerar.bind(honda);
+
+  console.log(acelerarGM(300,20))
+  console.log(carro)
