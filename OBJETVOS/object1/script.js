@@ -44,9 +44,29 @@ const pessoa = new Object({
 
   Object.defineProperties(moto, {
     rodas: {
-        value: 2,
-        configurable: false,
-        writable: true,
+        get() {
+          return this._rodas;
+        },
+
+        set() {
+          this._rodas = valor * 4;
+        }
+    /*     configurable: false,
+        writable: true, */
     }
   })
+
+  console.log(moto);
+
+  const innerHeightConfig = Object.getOwnPropertyDescriptor(window,'innerHeight');
   
+  Object.getOwnPropertyNames(Array.prototype)
+
+  const frutas = ['Banana'];
+
+  console.log(Object.getPrototypeOf(''));
+  console.log(Array.prototype);
+
+  const frutas1 = ['Banana', 'Pêra'];
+  const frutas2 = ['Banana', 'Pêra'];
+
