@@ -4,7 +4,7 @@ const pessoa = new Object({
   
   console.log(pessoa)
   
-  const carro =  {
+  /* const carro =  {
     marca: 'Marca',
     rodas: 4,
     init(valor) {
@@ -19,7 +19,7 @@ const pessoa = new Object({
     buzinar() {
       return this.marca + 'buzinou';
     }
-  }
+  } */
   
   const honda = Object.create(carro);
   honda.init('Civic');
@@ -70,3 +70,26 @@ const pessoa = new Object({
   const frutas1 = ['Banana', 'Pêra'];
   const frutas2 = ['Banana', 'Pêra'];
 
+  const novaFruta = frutas1;
+
+  novaFruta[0] = 'Uva';
+
+console.log(frutas1)
+Object.is(frutas1 , frutas2)
+
+const carro = {
+  marca: 'Renault',
+  ano: 2023,
+}
+
+/* Object.seal(carro); */
+/* Object.preventExtensions(carro); */
+Object.freeze(carro);
+carro.portas = 4;
+delete carro.marca;
+
+carro.marca = 'Honda'
+
+console.log(carro)
+/* console.log(Object.isExtensible(carro)) */
+console.log(Object.isFrozen(carro))
