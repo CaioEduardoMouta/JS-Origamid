@@ -21,7 +21,7 @@ const pessoa = new Object({
     }
   } */
   
-  const honda = Object.create(carro);
+/*   const honda = Object.create(carro);
   honda.init('Civic');
 
   const lamborghinni = Object.create(carro).init('Ferrari');
@@ -52,7 +52,7 @@ const pessoa = new Object({
           this._rodas = valor * 4;
         }
     /*     configurable: false,
-        writable: true, */
+        writable: true, 
     }
   })
 
@@ -62,7 +62,7 @@ const pessoa = new Object({
   
   Object.getOwnPropertyNames(Array.prototype)
 
-  const frutas = ['Banana'];
+
 
   console.log(Object.getPrototypeOf(''));
   console.log(Array.prototype);
@@ -83,7 +83,7 @@ const carro = {
 }
 
 /* Object.seal(carro); */
-/* Object.preventExtensions(carro); */
+/* Object.preventExtensions(carro); 
 Object.freeze(carro);
 carro.portas = 4;
 delete carro.marca;
@@ -91,5 +91,19 @@ delete carro.marca;
 carro.marca = 'Honda'
 
 console.log(carro)
-/* console.log(Object.isExtensible(carro)) */
-console.log(Object.isFrozen(carro))
+/* console.log(Object.isExtensible(carro)) 
+console.log(Object.isFrozen(carro)) */
+
+const frutas = ['Banana', 'Uva'];
+const frases = 'Oi frase';
+const somar = function(a,b) {
+  return a + b;
+};
+
+const carro = {
+  marca: ford
+}
+
+console.log(carro.toString());
+
+console.log(Object.prototype.toString.call(frases));
