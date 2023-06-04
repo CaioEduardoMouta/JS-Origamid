@@ -7,6 +7,7 @@ import * as teste from "./modules/teste.js";
 
 teste.teste1()
 teste.teste2()
+console.log(teste.senha);
 initTabNav();
 initScrollSuave();
 initAnimacaoScroll();
